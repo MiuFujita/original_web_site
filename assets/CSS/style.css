@@ -1,0 +1,490 @@
+header {
+    width: 100%;
+    height: 100px;
+    background-color: pink;
+    padding-top: 10px;
+}
+
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 780px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.header-left > a {
+    margin-left: 100px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.numbertime {
+    font-size: 12px;
+}
+
+.contact {
+    text-align: right;
+    margin-right: 50px;
+}
+
+div > a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact_btn {
+    display: flex;
+    align-items: center;
+    border: solid red;
+    padding: 10px;
+    margin-right: 5px;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.contact_btn > p {
+    margin-left: 5px;
+}
+
+.h_contact > a {
+    color: black;
+    text-decoration: none;
+}
+
+.header-left {
+    margin-left: 5px;
+}
+
+.menu_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.mi_home > a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding:0 20px;
+    background-color: #8d5add;
+}
+
+.mi_detail > a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding:0 20px;
+    background-color: #bc5353;
+}
+
+.mi_contact > a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding:0 20px;
+    background-color: #de9f61;
+}
+
+.mi_access > a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding: 0 20px;
+    background-color: #99cc99;
+}
+
+/*main*/
+.top {
+    background-image:url(../img/town1.jpg);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 780px) {
+    main > .top {
+        background-size: cover;
+    }
+}
+
+
+.top::before {  
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.4;
+    z-index: 1;
+} 
+
+.top > .union {
+    font-size: 30px;
+    z-index: 2;
+    position: relative;
+    color: white;
+    margin-bottom: 5%;
+    /* background-color: #339900; */
+}
+
+.top > .union_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top > .union_text > p {
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+    color: white;
+    line-height: 30px;
+    width: max-content;
+    /* background-color: yellowgreen; */
+    text-align: center;
+} 
+
+.top > div > a {
+    position: relative;
+    font-size: 20px;
+    z-index: 2;
+    color: white;
+    line-height: 500%;
+    /* background-color: #339900; */
+}
+
+@media screen and (max-width: 780px) {
+    .top > p {
+        white-space: nowrap;
+        
+    }
+}
+
+.skill_detail1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill_policy > a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.policydl {
+    margin-top: 3%;
+}
+
+.policydl > a {
+    color: white;
+    position: relative;
+    z-index: 2;
+    background-color: #eb4848;
+    width: max-content;
+    padding: 20px;
+    font-size: smaller;
+    border-radius: 30px;
+    border: solid #ebcedf 4px;
+}
+
+.skill_detail > .skill_detail1 {
+    position: relative;
+    height: 200px;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+    
+.skill_detail > .skill_detail1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/policy.jpg); /* 画像を設定 */
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%); /* 画像に黒いエフェクトをかける */
+    z-index: 1;
+}
+
+
+.skill_detail2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill_manage > a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.managedl {
+    margin-top: 3%;
+}
+
+.managedl > a {
+    color: white;
+    position: relative;
+    z-index: 2;
+    background-color: #eb4848;
+    width: max-content;
+    padding: 20px;
+    font-size: smaller;
+    border-radius: 30px;
+    border: solid #ebcedf 4px;
+}
+
+
+
+.skill_detail > .skill_detail2 {
+    position: relative;
+    height: 200px;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+    
+.skill_detail > .skill_detail2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/manage.jpg); /* 画像を設定 */
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%); /* 画像に黒いエフェクトをかける */
+    z-index: 1;
+}
+
+
+.specific_text {
+    margin-top: 5%;
+}
+
+.specific_detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.specific_cost > a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.costdl {
+    margin-top: 3%;
+}
+
+.costdl > a {
+    color: white;
+    position: relative;
+    z-index: 2;
+    background-color: #eb4848;
+    width: max-content;
+    padding: 20px;
+    font-size: smaller;
+    border-radius: 30px;
+    border: solid #ebcedf 4px;
+}
+
+
+.specific > .specific_detail {
+    position: relative;
+    height: 200px;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+    
+.specific > .specific_detail::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/cost.jpg); /* 画像を設定 */
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%); /* 画像に黒いエフェクトをかける */
+    z-index: 1;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.bottom {
+    background-image: url(../img/town2.jpg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 30px 0;
+}
+
+.bottom::before {    
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.contact2 {
+    position: relative;
+    z-index: 2;
+}
+
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.text-contact {
+    /* margin: 30px 0; */
+    font-size: 20px;
+    text-align: center;
+}
+
+.mc_tel{
+    text-decoration: none;
+    color: black;
+}
+
+.main-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+}
+
+.number2 {
+    padding-right: 10px;
+}
+
+.mc_detail {
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+}
+
+.mc_number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.mc_btn {
+    display: flex;
+    align-items: center;
+    border: solid red;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.mc_tel {
+    font-size: 30px;
+}
+
+.mc_contactbtn {
+    margin-left: 5px;
+}
+
+.mc_contactbtn > a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+
+.mc_time {
+    line-height: 23px;
+    margin-left: 30px;
+
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 15%;
+    background-color: #99cc99;
+}
+
+.footer-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-address {
+    font-size: larger;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+.footer-right {
+    border: solid 2px #339900;
+}
+
