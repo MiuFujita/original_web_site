@@ -6,10 +6,15 @@
     <title>さくら協同組合</title>
     <link rel="stylesheet" href="./assets/CSS/reset.css">
     <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
-
+    <a href="#" id="homeIcon">
+        <i class="fas fa-home fa-2x" id="homeIconIcon"></i>
+    </a>
     <header>
         <div class="header_top">
             <div class="header-left">
@@ -17,20 +22,31 @@
             </div>
             <div class="header-right">
                 <div class="contact">
-                    <span class="number"><i class="fas fa-phone-volume"></i>
-                        0865-45-9001</span>
+                    <span class="number">
+                        <i class="fas fa-phone-volume"></i>
+                        0865-45-9001
+                    </span>
                     <br>
-                    <span class="numbertime">【 受付時間：平日9:00〜17:00 】</span>
-                   </div>
-                <div class="contact_btn">
-                    <i class="far fa-envelope fa-2x"></i>
-                    <p class="h_contact"><a href="./contact.html">お問い合わせ</a></p>
-                </div>    
+                    <span class="numbertime">
+                        【 受付時間：平日9:00〜17:00 】
+                    </span>
+                </div>
+                <div class="cb_parent">
+                    <div class="contact_btn">
+                        <i class="far fa-envelope fa-2x"></i>
+                        <p class="h_contact"><a href="./contact.html">お問い合わせ</a></p>
+                    </div>            
+                </div>
             </div>    
         </div>
-        <nav>
+        <nav>     
             <div class="header_bottum">
-                <div class="menu_btn">
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>    
+                <nav class="menu_btn">
                     <ul class="menu_item">
                         <li class="mi_home">
                             <a href="./index.html">HOME</a>
@@ -45,14 +61,13 @@
                             <a href="./access.html">アクセス</a>
                         </li>
                     </ul>
-                </div>
+                </nav>
             </div>
         </nav>
     </header>
 
     <main>
         <section class="top">
-            <h1 class="union">組合概要</h1>
             <div class="union_text">
                 <p>外国人技能実習生を受け入れし、我が国で開発され培われた技能、又は知識の開発途上地域等への移転を図り、
                     <br>その開発途上地域等の経済発展を狙う「人づくり」に協力することを目的とする協同組合です。
@@ -65,26 +80,27 @@
             <div class="skill">
                 <h1 class="skill_text">技能実習</h1>
                 <div class="skill_detail">
+                    <div class="skill_detail3">
+                        <p class="skill_hp">
+                            実習制度について詳しくはこちらの <a href="http://www.otit.go.jp/">OTIT 外国人技能実習機構</a> のHPをご覧ください
+                        </p>    
+                    </div>
+
                     <div class="skill_detail1">
                         <p class="skill_policy">
-                            <a href="./assets/PDF/policy.pdf">管理団体の業務に運営に関する規定</a>
+                            <a href="./assets/PDF/policy.pdf">監理団体の業務に運営に関する規定</a>
                         </p>
                         <div id="downloadButton1" class="policydl">
-                            <a href="./assets/PDF/policy.pdf" download="管理団体の業務に運営に関する規定">PDFはこちらからダウンロード</a>
+                            <a href="./assets/PDF/policy.pdf" download="監理団体の業務に運営に関する規定">ダウンロードはこちら</a>
                         </div>        
                     </div>
                     <div class="skill_detail2">
                         <p class="skill_manage">
-                            <a href="./assets/PDF/manage.pdf">管理費表</a>
+                            <a href="./assets/PDF/manage.pdf">監理費表</a>
                         </p>
                         <div id="downloadButton2" class="managedl">
-                            <a href="./assets/PDF/manage.pdf" download="管理費表">PDFはこちらからダウンロード</a>
+                            <a href="./assets/PDF/manage.pdf" download="監理費表">ダウンロードはこちら</a>
                         </div>    
-                    </div>
-                    <div class="skill_detail3">
-                        <p class="skill_hp">
-                            <a href="http://www.otit.go.jp/">実習制度について詳しくはこちら</a>
-                        </p>    
                     </div>
                 </div>
             </div>
@@ -95,15 +111,19 @@
                         <a href="./assets/PDF/cost.pdf">支援委託手数料</a>
                     </p>
                     <div id="downloadButton3" class="costdl">
-                        <a href="./assets/PDF/cost.pdf" download="支援委託手数料">PDFはこちらからダウンロード</a>
+                        <a href="./assets/PDF/cost.pdf" download="支援委託手数料">ダウンロードはこちら</a>
                     </div>    
                 </div>
             </div>
             <div id="popup" class="popup">
-                <div class="popup-content">
-                    <p>ダウンロードしますか？</p>
-                    <button id="confirmDownloadButton">はい</button>
-                    <button id="cancelDownloadButton">キャンセル</button>
+                <div id="popup_box">
+                    <div class="popup-content">
+                        <div class="popup-ask">
+                            <p>ダウンロードしますか？</p>
+                        </div>
+                        <button id="confirmDownloadButton">はい</button>
+                        <button id="cancelDownloadButton">キャンセル</button>    
+                    </div>
                 </div>
             </div>
         </section>
@@ -128,9 +148,11 @@
                                 休業日：土・日・祝・年末年始・お盆
                             </p>
                     </div>
-                    <div class="mc_btn">
-                        <i class="far fa-envelope fa-2x"></i>
-                        <p class="mc_contactbtn"><a href="./contact.html">お問い合わせはこちら</a></p>
+                    <div class="mcb_parent">
+                        <div class="mc_btn">
+                            <i class="far fa-envelope fa-2x"></i>
+                            <p class="mc_contactbtn"><a href="./contact.html">お問い合わせはこちら</a></p>
+                        </div>    
                     </div>
                 </div>
             </div>
@@ -139,16 +161,21 @@
 
     <footer>
         <div class="footer-left">
-            <p class="footer-title">さくら協同組合</p>
-            <p class="footer-address"><i class="fas fa-map-marker-alt"></i>719-0244
-                <br>
-                岡山県浅口市鴨方町深田2767-1
-                <br>
-                リバーサイド21　201
-            </p>
-        </div>
-        <div class="footer-right">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.7405276130025!2d133.58117239999999!3d34.53480130000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355143b7ecd14ba9%3A0x66ed8ce64b1bdc6f!2z5pel5pys44CB44CSNzE5LTAyNDQg5bKh5bGx55yM5rWF5Y-j5biC6bSo5pa555S65rex55Sw77yS77yX77yW77yX4oiS77yR!5e0!3m2!1sja!2sph!4v1698649979752!5m2!1sja!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="footer_left">
+                <p class="footer-title">さくら協同組合</p>
+                <p class="footer-address"><i class="fas fa-map-marker-alt"></i>719-0244
+                    <br>
+                    岡山県浅口市鴨方町深田2767-1
+                    <br>
+                    リバーサイド21　201
+                </p>
+            </div>
+            <div class="footer-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.7405276130025!2d133.58117239999999!3d34.53480130000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355143b7ecd14ba9%3A0x66ed8ce64b1bdc6f!2z5pel5pys44CB44CSNzE5LTAyNDQg5bKh5bGx55yM5rWF5Y-j5biC6bSo5pa555S65rex55Sw77yS77yX77yW77yX4oiS77yR!5e0!3m2!1sja!2sph!4v1698649979752!5m2!1sja!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>    
+            </div>
+        <div class="copyright">
+            <p>&copy; 2023 sakura. All rights reserved.</p>
         </div>
     </footer>
 

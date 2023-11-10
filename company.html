@@ -6,9 +6,16 @@
     <title>組合概要</title>
     <link rel="stylesheet" href="./assets/CSS/reset.css">
     <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/company.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
+    <a href="#" id="homeIcon">
+        <i class="fas fa-home fa-2x" id="homeIconIcon"></i>
+    </a>
     <header>
         <div class="header_top">
             <div class="header-left">
@@ -16,20 +23,31 @@
             </div>
             <div class="header-right">
                 <div class="contact">
-                    <span class="number"><i class="fas fa-phone-volume"></i>
-                        0865-45-9001</span>
+                    <span class="number">
+                        <i class="fas fa-phone-volume"></i>
+                        0865-45-9001
+                    </span>
                     <br>
-                    <span class="numbertime">【 受付時間：平日9:00〜17:00 】</span>
-                   </div>
-                <div class="contact_btn">
-                    <i class="far fa-envelope fa-2x"></i>
-                    <p class="h_contact"><a href="./contact.html">お問い合わせ</a></p>
-                </div>    
+                    <span class="numbertime">
+                        【 受付時間：平日9:00〜17:00 】
+                    </span>
+                </div>
+                <div class="cb_parent">
+                    <div class="contact_btn">
+                        <i class="far fa-envelope fa-2x"></i>
+                        <p class="h_contact"><a href="./contact.html">お問い合わせ</a></p>
+                    </div>            
+                </div>
             </div>    
         </div>
-        <nav>
+        <nav>     
             <div class="header_bottum">
-                <div class="menu_btn">
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>    
+                <nav class="menu_btn">
                     <ul class="menu_item">
                         <li class="mi_home">
                             <a href="./index.html">HOME</a>
@@ -44,62 +62,112 @@
                             <a href="./access.html">アクセス</a>
                         </li>
                     </ul>
-                </div>
+                </nav>
             </div>
         </nav>
     </header>
 
     <main>
         <div class="company_main">
-            <h1>組合概要</h1>
-            <section class="cm_tom">
-                <p>外国人技能実習生を受け入れし、我が国で開発され培われた技能、又は知識の開発途上地域等への移転を図り、
-                    <br>その開発途上地域等の経済発展を狙う「人づくり」に協力することを目的とする協同組合です。
-                    <br>実習実施者等と技能実習生等との間における雇用関係の成立のあっせん及び実習実施者に対する団体管理型技能実習の実施に関する管理を行います。</p>
-            </section>    
+            <section class="top">
+                <h1 class="union">組合概要</h1>
+            </section>
         </div>
-        <table>
-            <tbody class="detail_table">
-                <tr>
-                    <th>事業所名</th>
-                    <td>さくら協同組合</td>
-                </tr>
-                <tr>
-                    <th>設立</th>
-                    <td>2005年9月30日</td>
-                </tr>
-                <tr>
-                    <th>所在地</th>
-                    <td>719-0244
-                        <br>
-                        岡山県浅口市鴨方町深田2767-1
-                        <br>
-                        リバーサイド21 201
-                    </td>
-                </tr>
-                <tr>
-                    <th>TEL</th>
-                    <td>0865-45-9001</td>
-                </tr>
-                <tr>
-                    <th>FAX</th>
-                    <td>0865-45-9010</td>
-                </tr>
-                <tr>
-                    <th>email</th>
-                    <td>sakura30@mx1.kcv.ne.jp</td>
-                </tr>
-                <tr>
-                    <th>管理団体許可</th>
-                    <td>一般管理団体　許 1709000593</td>
-                </tr>
-                <tr>
-                    <th>登録支援機関</th>
-                    <td>23 登ー009071</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table_container">
+            <table>
+                <tbody class="detail_table">
+                    <tr class="table_detail">
+                        <th>事業所名</th>
+                        <td>さくら協同組合</td>
+                    </tr>
+                    <tr class="table_detail">
+                        <th>設立</th>
+                        <td>2005年9月30日</td>
+                    </tr>
+                    <tr class="table_detail">
+                            <th>所在地</th>
+                            <td>719-0244
+                                <br>
+                                岡山県浅口市鴨方町深田2767-1
+                                <br>
+                                リバーサイド21 201
+                            </td>    
+                    </tr>
+                    <tr class="table_detail">
+                        <th>TEL</th>
+                        <td>0865-45-9001</td>
+                    </tr>
+                    <tr class="table_detail">
+                        <th>FAX</th>
+                        <td>0865-45-9010</td>
+                    </tr>
+                    <tr class="table_detail">
+                        <th>email</th>
+                        <td>sakura30@mx1.kcv.ne.jp</td>
+                    </tr>
+                    <tr class="table_detail">
+                        <th>管理団体許可</th>
+                        <td>一般管理団体　許 1709000593</td>
+                    </tr>
+                    <tr class="table_detail">
+                        <th>登録支援機関</th>
+                        <td>23 登ー009071</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <section class="bottom">
+            <div class="contact2">
+                <p class="text-contact">
+                    不明点等ございましたら
+                    <br>
+                    お気軽にお問い合わせください
+                </p>
+                <div class="main-contact">
+                    <div class="mc_detail">
+                        <div class="mc_number">
+                            <span class="number2"><i class="fas fa-phone-volume fa-2x"></i></span>
+                             <a class="mc_tel" href="tel:0865459001">
+                                    <p>0865-45-9001</p>
+                            </a>
+                        </div>
+                            <p class="mc_time">
+                                受付時間：9:00〜17:00
+                                <br>
+                                休業日：土・日・祝・年末年始・お盆
+                            </p>
+                    </div>
+                    <div class="mcb_parent">
+                        <div class="mc_btn">
+                            <i class="far fa-envelope fa-2x"></i>
+                            <p class="mc_contactbtn"><a href="./contact.html">お問い合わせはこちら</a></p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="footer-left">
+            <div class="footer_left">
+                <p class="footer-title">さくら協同組合</p>
+                <p class="footer-address"><i class="fas fa-map-marker-alt"></i>719-0244
+                    <br>
+                    岡山県浅口市鴨方町深田2767-1
+                    <br>
+                    リバーサイド21　201
+                </p>
+            </div>
+            <div class="footer-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.7405276130025!2d133.58117239999999!3d34.53480130000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355143b7ecd14ba9%3A0x66ed8ce64b1bdc6f!2z5pel5pys44CB44CSNzE5LTAyNDQg5bKh5bGx55yM5rWF5Y-j5biC6bSo5pa555S65rex55Sw77yS77yX77yW77yX4oiS77yR!5e0!3m2!1sja!2sph!4v1698649979752!5m2!1sja!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>    
+            </div>
+        <div class="copyright">
+            <p>&copy; 2023 sakura. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./assets/script.js"></script>
 
 </body>
 </html>

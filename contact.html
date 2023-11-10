@@ -3,33 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>お問い合わせ</title>
     <link rel="stylesheet" href="./assets/CSS/reset.css">
     <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
     <header>
+        <a href="#" id="homeIcon">
+            <i class="fas fa-home fa-2x" id="homeIconIcon"></i>
+        </a>    
         <div class="header_top">
             <div class="header-left">
                 <a href="./index.html">さくら協同組合</a>
             </div>
             <div class="header-right">
                 <div class="contact">
-                    <span class="number"><i class="fas fa-phone-volume"></i>
-                        0865-45-9001</span>
+                    <span class="number">
+                        <i class="fas fa-phone-volume"></i>
+                        0865-45-9001
+                    </span>
                     <br>
-                    <span class="numbertime">【 受付時間：平日9:00〜17:00 】</span>
-                   </div>
-                <div class="contact_btn">
-                    <i class="far fa-envelope fa-2x"></i>
-                    <p class="h_contact"><a href="./contact.html">お問い合わせ</a></p>
-                </div>    
+                    <span class="numbertime">
+                        【 受付時間：平日9:00〜17:00 】
+                    </span>
+                </div>
+                <div class="cb_parent">
+                    <div class="contact_btn">
+                        <i class="far fa-envelope fa-2x"></i>
+                        <p class="h_contact"><a href="./contact.html">お問い合わせ</a></p>
+                    </div>            
+                </div>
             </div>    
         </div>
-        <nav>
+        <nav>     
             <div class="header_bottum">
-                <div class="menu_btn">
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>    
+                <nav class="menu_btn">
                     <ul class="menu_item">
                         <li class="mi_home">
                             <a href="./index.html">HOME</a>
@@ -44,10 +62,60 @@
                             <a href="./access.html">アクセス</a>
                         </li>
                     </ul>
-                </div>
+                </nav>
             </div>
         </nav>
     </header>
+
+    <main>
+        <div class="main_contact">
+            <section class="top">
+                <h1 class="contact_text1">お問い合わせ</h1>
+            </section>
+            <div class="contact_text2">
+                <p>お問い合わせありがとうございます。
+                    <br>内容を確認次第、メールまたはInstagramのダイレクトメッセージにてご連絡いたします。
+                    <br>尚、お問い合わせ時間やお問い合わせ内容によりましては、返答に時間をいただく場合がございます。
+                    <br>また、メールではお客様のメールアドレスが違っていた場合や、システム障害などによりお返事できない場合がございます。
+                    <br>お手数をおかけいたしますが、返答のない場合や、お急ぎの場合は、お電話にてお問い合わせください。
+                </p>
+            </div>
+            <div class="mail_instagram">
+                <div class="contact_mail">
+                    <p class="mail_text">メールでのお問い合わせは</p>
+                    <i class="fas fa-paper-plane"></i>
+                    <a href="mailto:sakura30@mx1.kcv.ne.jp">こちらから</a>
+                </div>
+                <div class="contact_instagram">
+                    <p class="instagram_text">Instagramでのお問い合わせは</p>
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/kumiai.9" target="_blank">こちらから</a>
+                </div>    
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <div class="footer_left">
+                <p class="footer-title">さくら協同組合</p>
+                <p class="footer-address"><i class="fas fa-map-marker-alt"></i>719-0244
+                    <br>
+                    岡山県浅口市鴨方町深田2767-1
+                    <br>
+                    リバーサイド21　201
+                </p>
+            </div>
+            <div class="footer-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.7405276130025!2d133.58117239999999!3d34.53480130000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355143b7ecd14ba9%3A0x66ed8ce64b1bdc6f!2z5pel5pys44CB44CSNzE5LTAyNDQg5bKh5bGx55yM5rWF5Y-j5biC6bSo5pa555S65rex55Sw77yS77yX77yW77yX4oiS77yR!5e0!3m2!1sja!2sph!4v1698649979752!5m2!1sja!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>    
+            </div>
+        <div class="copyright">
+            <p>&copy; 2023 sakura. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./assets/script.js"></script>
+
 
 </body>
 </html>

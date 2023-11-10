@@ -1,0 +1,67 @@
+.top {
+    height: 200px;
+}
+
+@media screen and (max-width: 780px) {
+    .company_main > .top {
+        background-size: cover;
+        margin-top: 15%;
+        height: 200px;
+    }
+}
+
+
+.top > .union {
+    font-size: 30px;
+    z-index: 2;
+    position: relative;
+    color: white;
+    margin-bottom: 5%;
+}
+
+.top > .union {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.union {
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 780px) {
+    .top > .union {
+        margin: 0;
+    }
+}
+
+.table_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+tbody {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    /* text-decoration: underline green; */
+}
+
+table > .detail_table {
+    width: 200%;
+    height: 200px;
+    line-height: 400%;
+}
+
+.table_container > table {
+    width: 100%;
+    max-width: 800px;
+}
+
+.table_detail {
+    border-bottom: solid red;
+}
+
