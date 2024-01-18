@@ -177,10 +177,10 @@ header {
     .menu_btn {
         display: none;
         position: absolute;
-        top: 60px;
-        right: 10px;
+        /* top: 60px; */
+        /* right: 10px; */
         background-color: #333;
-        padding: 10px;
+        /* padding: 10px; */
     }
 }
 
@@ -214,17 +214,18 @@ header {
 
 @media screen and (max-width: 780px) {
     .menu_item {
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
+        /* margin: 0; */
+        /* padding: 0; */
+        padding-top: 0;
+        /* justify-content: center; */
     }
 }
 
 @media screen and (max-width: 780px) {
     .menu_item > li > a {
-        text-align: center;
+        /* text-align: center; */
     }
 }
 
@@ -1012,3 +1013,14 @@ header {
     }
 }
 
+.skill_policy {
+    font-size: larger;
+}
+
+.skill_manage {
+    font-size: larger;
+}
+
+.specific_cost {
+    font-size: larger;
+}
